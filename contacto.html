@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCafé</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo_nombre no-margin centrar-texto">RicoProgramar<span class="logo_bold">ConUnCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 id="heading" class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+
+        <div class="contacto-bg"></div>
+
+        <form class="contact-form">
+            <div class="contact-form__input">
+                <label class="contact-form__label" for="nombre">Nombre</label>
+                <input 
+                    class="contact-form_field contact-form_field--user-name"
+                    type="text" 
+                    placeholder="Tu Nombre" 
+                    name="userName" 
+                    >
+                    <!-- Los nombres del name tienen que ir en lower-camel case, osea primero en minuscula y la segunda palabra en Mayuscula "userName" -->
+                     <form class="contact-form">
+            <div class="contact-form__input">
+                <label class="contact-form__label" for="Email">Correo Electronico</label>
+                <input 
+                    class="contact-form_field contact-form_field--user-email"
+                    type="email" 
+                    placeholder="Tu correo elecronico"
+                    name="userEmail"               
+                >
+                <!-- Los nombres del name tienen que ir en lower-camel case, osea primero en minuscula y la segunda palabra en Mayuscula "userName" -->
+            </div>
+            <div class="contact-form__input">
+                <label class="contact-form__label" for="Tel">telefono</label>
+                <input 
+                    class="contact-form_field contact-form_field--user-phone"
+                    type="tel" 
+                    placeholder="Tu numero de telefono" 
+                    name="userPhone"
+                >
+                <!-- Los nombres del name tienen que ir en lower-camel case, osea primero en minuscula y la segunda palabra en Mayuscula "userName" -->
+            </div>
+            <div class="contact-form__input">
+                <label class="contact-form__label" for="tel">Mensaje</label>
+                <textarea 
+                    class="contact-form_field contact-form_input--textarea"
+                    name="userMessage"
+                    
+                ></textarea>
+            </div>
+
+            <div class="contact-form__input">
+                <input type="submit" value="Enviar" class="contact-form__button contact-form--primary-button">
+            </div>
+        </form>
+
+        
+    </main>
+
+    <div class="btn-print boton boton--primario">Imprimir mensaje</div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo_nombre no-margin centrar-texto">Blog<span class="logo_bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src = "/js/04-permite-numeros-bloquea-letras.js"></script> -->
+    <!-- <script src = "js/05-evento-enun-input.js"></script> -->
+    <script src = "js/06-form-data-api.js"></script>
+</body>
+</html>
